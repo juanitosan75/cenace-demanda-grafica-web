@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gráfico de Energía - CENACE</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Demanda, Generación y Pronóstico</h1>
+      <div class="date-selector">
+        <label for="date">Selecciona la fecha:</label>
+        <input type="date" id="date" value="2025-07-12" />
+        <button onclick="fetchData()">Actualizar</button>
+      </div>
+      <canvas id="myChart"></canvas>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
