@@ -18,7 +18,7 @@ async function fetchData() {
 function renderChart(data, date) {
     const ctx = document.getElementById('myChart').getContext('2d');
     
-    document.querySelector('h1').textContent = `Demanda, Generación y Pronóstico - ${formatDate(date)}`;
+    document.querySelector('h1').textContent = `Demanda, Generación y Pronóstico del SIN`;
     
     if (window.myChart instanceof Chart) {
         window.myChart.destroy();
